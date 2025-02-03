@@ -1,3 +1,7 @@
+import streamlit as st
+
+st.code(
+    """
 # 這是註解，不會被執行
 # ctrl+? 可以把框選的範圍做 快速註解/取消註解
 print(1)  # int這是整數，-1,0,1,,2,3,4,5,6,7,8,9,10
@@ -34,3 +38,6 @@ print(1 % 1)  # 取餘數
 # 字串運算，+、*
 print("Hello" + "world")  # 字串相加
 print("Hello" * 3)  # 字串乘法
+
+"""
+)
