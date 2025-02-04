@@ -70,3 +70,15 @@ print(not False)  # True
 # 4. 加法減法
 # 5 == != > < >= <=比較運算子
 # 6 and or not 羅輯運算子
+password = input("請輸入密碼:")
+if password == "123456":
+    print("密碼正確")
+elif password == "12345678":
+    print("密碼正確")
+elif password == "123456789":
+    print("密碼正確")
+else:
+    print("密碼錯誤")
+# 連續使用if跟使用elif else的差別
+# elif可以排除上一個if的條件，所以縮短判斷條件的複雜度，也節省了時間
+# 但是如果是使用多個if來獨立判斷，則每個if都會執行，所以效率會較低
