@@ -10,7 +10,7 @@ st.write(
 * **粗體文字**
 * **斜體文字**
 * ~~刪除線~~
-==螢光筆==
+* ==螢光筆==
 * [連結](https://bracky.streamlit.app/)
 * 代碼塊
     ```python
