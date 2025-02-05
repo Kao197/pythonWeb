@@ -27,9 +27,11 @@ elif int(e) <= x:
 elif int(e) >= x:
     st.write("再小一點!!")
     st.session_state.number = st.session_state.number - 1
-if int(e) <= 50:
-    b = st.session_state.annumber3 + e
+if int(e) < 50:
+    b = st.session_state.annumber3 = e
+    st.session_state.annumber3 = b
     st.write(f"小於{a}大於{b}")
 elif int(e) >= 50:
-    a = st.session_state.annumber2 - e
+    a = st.session_state.annumber2 = e
+    st.session_state.annumber2 = a
     st.write(f"小於{a}大於{b}")
