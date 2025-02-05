@@ -2,8 +2,7 @@ import streamlit as st
 import random as r
 
 if "ans" not in st.session_state:
-    st.session_state.ans = r.randrange(1, 100)
-
+    st.session_state.ans = r.randrange(1, 101)
 if "number" not in st.session_state:
     st.session_state.number = 7
 n = st.session_state.number
