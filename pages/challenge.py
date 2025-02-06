@@ -31,3 +31,9 @@ elif int(e) > x:
     if st.session_state.number2 > e:
         st.session_state.number2 = e
     st.write(f"小於{st.session_state.number2}大於{st.session_state.number3}")
+if st.button("reset"):
+    st.session_state.ans = r.randrange(0, 101)
+    st.session_state.number2 = 100
+    st.session_state.number3 = 0
+    st.session_state.number = 7
+    st.rerun()
