@@ -19,13 +19,15 @@ if n == 0:
 elif int(e) == x:
     st.balloons()
     st.write("答對!!!!!")
-elif int(e) <= x:
+elif int(e) < x:
     st.write("再大一點!!")
     st.session_state.number = st.session_state.number - 1
-    st.session_state.number3 = e
+    if st.session_state.number3 < e:
+        st.session_state.number3 = e
     st.write(f"小於{st.session_state.number2}大於{st.session_state.number3}")
-elif int(e) >= x:
+elif int(e) > x:
     st.write("再小一點!!")
     st.session_state.number = st.session_state.number - 1
-    st.session_state.number2 = e
+    if st.session_state.number2 > e:
+        st.session_state.number2 = e
     st.write(f"小於{st.session_state.number2}大於{st.session_state.number3}")

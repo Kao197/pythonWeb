@@ -15,9 +15,9 @@ if n == 0:
 elif int(e) == x:
     st.balloons()
     st.write("答對!!!!!")
-elif int(e) <= x:
+elif int(e) < x:
     st.write("再大一點!!")
     st.session_state.number = st.session_state.number - 1
-elif int(e) >= x:
+elif int(e) > x:
     st.write("再小一點!!")
     st.session_state.number = st.session_state.number - 1
