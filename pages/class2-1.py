@@ -68,8 +68,8 @@ print(not False)  # True
 # 2. 次方
 # 3. * / // %乘法 除法 整除 取餘數
 # 4. 加法減法
-# 5 == != > < >= <=比較運算子
-# 6 and or not 羅輯運算子
+# 5. == != > < >= <=比較運算子
+# 6. and or not 羅輯運算子
 password = input("請輸入密碼:")
 if password == "123456":
     print("密碼正確")
