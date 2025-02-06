@@ -130,7 +130,7 @@ print(d.pop("e", "not found"))  # not found
 
 ```python
 d = {"a": [1, 2, {"e": 40, "f": 50}], "b": {"c": 4, "d": 5}}
-print(d["a"])  # [1, 2, 3]
+print(d["a"]) # [1,2,e:40,f:50]
 print(d["a"][0])  # 1
 print(d["b"])  # {'c': 4, 'd': 5}
 print(d["b"]["c"])  # 4

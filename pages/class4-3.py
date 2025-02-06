@@ -88,7 +88,7 @@ print(d.pop("e", "not found"))  # Not found
 # 如果資料不存在也沒有預設值，就會報錯
 # 比較複雜的dict
 d = {"a": [1, 2, {"e": 40, "f": 50}], "b": {"c": 4, "d": 5}}
-print(d["a"])  # [1,2,3]
+print(d["a"])  # [1,2,e:40,f:50]
 print(d["a"][0])  # 1
 print(d["b"])  # {'c': 4, 'd': 5}
 print(d["b"]["c"])  # 4
