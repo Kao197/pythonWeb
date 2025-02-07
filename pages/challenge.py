@@ -11,7 +11,7 @@ if "number2" not in st.session_state:
 if "number3" not in st.session_state:
     st.session_state.number3 = 0
 if "number" not in st.session_state:
-    st.session_state.number = 7
+    st.session_state.number = 8
 
 n = st.session_state.number
 x = st.session_state.ans
@@ -38,5 +38,5 @@ if st.button("reset"):
     st.session_state.ans = r.randrange(0, 101)
     st.session_state.number2 = 100
     st.session_state.number3 = 0
-    st.session_state.number = 7
+    st.session_state.number = 8
     st.rerun()
