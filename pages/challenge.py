@@ -1,6 +1,8 @@
 import streamlit as st
 import random as r
+import menu
 
+menu.menu()
 if "ans" not in st.session_state:
     st.session_state.ans = r.randrange(0, 101)
 if "number2" not in st.session_state:

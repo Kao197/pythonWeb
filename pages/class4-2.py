@@ -1,5 +1,7 @@
 import streamlit as st  # 匯入 Streamlit 函式庫
+import menu
 
+menu.menu()
 # 初始化購物車，確保 `st.session_state.cart` 存在
 if "cart" not in st.session_state:
     st.session_state.cart = []
