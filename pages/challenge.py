@@ -3,6 +3,7 @@ import random as r
 import menu
 
 menu.menu()
+
 if "ans" not in st.session_state:
     st.session_state.ans = r.randrange(0, 101)
 if "number2" not in st.session_state:
@@ -11,6 +12,7 @@ if "number3" not in st.session_state:
     st.session_state.number3 = 0
 if "number" not in st.session_state:
     st.session_state.number = 7
+
 n = st.session_state.number
 x = st.session_state.ans
 st.title("猜數字小游戲")
@@ -31,7 +33,7 @@ elif int(e) > x:
     if st.session_state.number2 > e:
         st.session_state.number2 = e
 st.write(f"小於{st.session_state.number2}大於{st.session_state.number3}")
-st.write(f"你還有 {n} 次機會")
+st.write(f"你還有 {st.session_state.number} 次機會")
 if st.button("reset"):
     st.session_state.ans = r.randrange(0, 101)
     st.session_state.number2 = 100
