@@ -24,13 +24,11 @@ elif int(e) < x:
     st.session_state.number = st.session_state.number - 1
     if st.session_state.number3 < e:
         st.session_state.number3 = e
-        st.write(f"小於{st.session_state.number2}大於{st.session_state.number3}")
 elif int(e) > x:
     st.write("再小一點!!")
     st.session_state.number = st.session_state.number - 1
     if st.session_state.number2 > e:
         st.session_state.number2 = e
-        st.write(f"小於{st.session_state.number2}大於{st.session_state.number3}")
 st.write(f"小於{st.session_state.number2}大於{st.session_state.number3}")
 if st.button("reset"):
     st.session_state.ans = r.randrange(0, 101)
