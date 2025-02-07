@@ -11,7 +11,7 @@ client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 st.title("猜迷小游戲")
 
-if "history22" not in st.session_state:
+if "history2" not in st.session_state:
     st.session_state.history2 = []
 
 for message in st.session_state.history2:
