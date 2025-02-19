@@ -10,7 +10,7 @@ if "number2" not in st.session_state:
     st.session_state.number2 = 100
 if "number3" not in st.session_state:
     st.session_state.number3 = 0
-if "number" not in st.session_state:
+if "number4" not in st.session_state:
     st.session_state.number4 = 8
 
 n = st.session_state.number
