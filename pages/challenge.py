@@ -14,7 +14,7 @@ if "number4" not in st.session_state:
     st.session_state.number4 = 8
 
 n = st.session_state.number4
-x = st.session_state.ans
+x = st.session_state.answer
 st.title("猜數字小游戲")
 e = st.number_input("請輸入數字", min_value=0, max_value=100, step=1, value=0)
 if n == 0:
