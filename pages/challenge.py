@@ -35,7 +35,7 @@ elif int(e) > x:
 st.write(f"小於{st.session_state.number2}大於{st.session_state.number3}")
 st.write(f"你還有 {st.session_state.number4} 次機會")
 if st.button("reset"):
-    st.session_state.ans = r.randrange(0, 101)
+    st.session_state.answer = r.randrange(0, 101)
     st.session_state.number2 = 100
     st.session_state.number3 = 0
     st.session_state.number4 = 8
