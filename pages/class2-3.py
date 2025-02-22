@@ -25,7 +25,7 @@ elif int(e) < x:
 elif int(e) > x:
     st.write("再小一點!!")
     st.session_state.number = st.session_state.number - 1
-if st.button("reset"):
+if st.button("reset", key="reset"):
     st.session_state.answer = r.randrange(0, 101)
     st.session_state.number = 7
     st.rerun()
