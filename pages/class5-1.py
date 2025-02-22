@@ -19,7 +19,7 @@ for name, subject in grade.items():
     total = 0
     for score in subject.values():
         total += sum(score)
-        avg = total / 9
+        avg = total / 9  # 每位學生共有 9 次考試成績 (3 科 x 3 次)
     print(f"{name} 的總平均成績為 {avg}")
 # 整理全校各科目平均成績
 # 1.先找出所有的科目列表

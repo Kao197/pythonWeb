@@ -32,10 +32,11 @@ for name, subject in grade.items():
     avg = sum(subject["國文"]) / len(subject["國文"])
     print(f"{name} 的國文段考平均成績為 {avg}")
 
-# 計算每位學生的總平均成績
 for name, subject in grade.items():
-    total = sum(sum(scores) for scores in subject.values())
-    avg = total / 9  # 每位學生共有 9 次考試成績 (3 科 x 3 次)
+    total = 0
+    for score in subject.values():
+        total += sum(score)
+        avg = total / 9  # 每位學生共有 9 次考試成績 (3 科 x 3 次)
     print(f"{name} 的總平均成績為 {avg}")
 ```
 
